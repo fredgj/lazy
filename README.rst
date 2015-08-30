@@ -50,7 +50,8 @@ LazyProperty
             time.sleep(3)
             return self._n*10
 
-        @x.setter(self, value):
+        @x.setter
+        def x(self, value)
             self._n = value
 
         @x.deleter
