@@ -4,9 +4,9 @@ class LazyRef(object):
         self.name = fget.__name__
 
     def __get__(self, instance, cls):
-        val = self.fget(instance)
-        instance.__dict__[self.name] = val
-        return val
+        value = self.fget(instance)
+        instance.__dict__[self.name] = value
+        return value
 
 
 class LazyProperty(object):
