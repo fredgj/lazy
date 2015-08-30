@@ -10,7 +10,7 @@ right away.
 
 For more documentation about properties check out `pythons property
 documentation 
-<https://docs.python.org/2/library/functions.html#property>_`.
+<https://docs.python.org/2/library/functions.html#property>`_.
 
 LazyProperty
 ------------
