@@ -53,7 +53,7 @@ LazyProperty
             return self._n*10
 
         @x.setter
-        def x(self, value)
+        def x(self, value):
             self._n = value
 
         @x.deleter
