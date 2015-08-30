@@ -9,7 +9,8 @@ you look it up, so the second time you lookup it up it will return its value
 right away.
 
 For more documentation about properties check out `pythons property
-documentation <https://docs.python.org/2/library/functions.html#property>_`.
+documentation 
+<https://docs.python.org/2/library/functions.html#property>_`.
 
 LazyProperty
 ------------
