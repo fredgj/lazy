@@ -22,7 +22,7 @@ class LazyProperty(object):
     def __get__(self, instance, cls):
         if self.fget is None:
             raise AttributeError('unreadable attribute')
-        if not self.value:
+        if self.value is None:
             self.value = self.fget(instance)
         return self.value
 
