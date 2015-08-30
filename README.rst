@@ -48,6 +48,7 @@ LazyProperty
 
         @LazyProperty
         def x(self):
+            """x documentation ..."""
             time.sleep(3)
             return self._n*10
 
@@ -90,7 +91,7 @@ Can also be used this way
         def del_x(self):
             del self.n
 
-        x = LazyProperty(fget=get_x, fset=set_x, fdel=del_x)
+        x = LazyProperty(fget=get_x, fset=set_x, fdel=del_x, doc='x documentation')
 
 
 LazyRef
