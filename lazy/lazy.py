@@ -2,7 +2,6 @@ class LazyRef(object):
     def __init__(self, func):
         self.func = func
         self.name = func.__name__
-        self.__doc__ = func.__doc__
 
     def __get__(self, instance, cls):
         val = self.func(instance)
