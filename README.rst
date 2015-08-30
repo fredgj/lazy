@@ -40,6 +40,7 @@ LazyProperty
 .. code:: python
     
     import time
+    from lazy import LazyProperty
 
     class SomeClass(object):
         def __init__(self, n):
@@ -73,6 +74,7 @@ Can also be used this way
     
     
     import time
+    from lazy import LazyProperty
 
     class SomeClass(object)
         def __init__(self, n):
@@ -96,6 +98,7 @@ LazyRef
 .. code:: python
 
     import time
+    from lazy import LazyRef
 
     class SomeClass(object):
         def __init__(self, n):
