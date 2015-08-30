@@ -1,10 +1,10 @@
 class LazyRef(object):
-    def __init__(self, func):
-        self.func = func
-        self.name = func.__name__
+    def __init__(self, fget):
+        self.fget = fget
+        self.name = fget.__name__
 
     def __get__(self, instance, cls):
-        val = self.func(instance)
+        val = self.fget(instance)
         instance.__dict__[self.name] = val
         return val
 
