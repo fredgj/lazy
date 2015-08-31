@@ -113,6 +113,6 @@ LazyRef
 
     s = SomeClass(3)
     print(s.x) # takes time
-    # Now x is stored together it's value in s' instance dictionary
+    # Now x is stored together its value in s' instance dictionary
     print(s.x) # returns right away
 
